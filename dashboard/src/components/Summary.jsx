@@ -9,7 +9,7 @@ const Summary = () => {
     const checkAuth = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/check-auth",
+          `${import.meta.env.VITE_API_URL}/check-auth`,
           {
             withCredentials: true
           }
