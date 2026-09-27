@@ -5,8 +5,6 @@ const jwt = require("jsonwebtoken");
 module.exports.signup = async (req, res) => {
     try {
 
-        //  console.log("SIGNUP REQUEST:", req.body);
-
         let { name, email, password } = req.body
 
         if (!name || !email || !password) {
@@ -95,8 +93,8 @@ module.exports.login = async (req, res) => {
 
         res.cookie("token", token, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production",
-            sameSite: "strict",
+            secure: true,
+            sameSite: "none",
             maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
         });
 
@@ -118,8 +116,8 @@ module.exports.logout = (req, res) => {
     try {
         res.clearCookie("token", {
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production",
-            sameSite: "strict"
+            secure: true,
+            sameSite: "none"
         });
 
         res.status(200).json({

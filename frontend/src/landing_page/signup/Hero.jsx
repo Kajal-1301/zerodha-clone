@@ -14,7 +14,7 @@ const Hero = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/signup", { name, email, password });
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/signup`, { name, email, password });
 
       setName("");
       setEmail("");
