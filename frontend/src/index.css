@@ -1,0 +1,294 @@
+/*------------ Text style  -------------*/
+
+.text-heading {
+  color: #424242 !important;
+}
+
+.text-body {
+  color: #666666 !important;
+}
+
+/*------------ Navbar style  -----------*/
+
+.nav-link {
+    margin-left: 30px;
+    color: #666666 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #387ed1 !important;
+}
+
+.navbar-toggler {
+  width: 45px;
+  height: 40px;
+  padding: 5px;
+}
+
+.navbar-toggler-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.small-para {
+    font-size: 0.65rem;
+    color: #666666;
+}
+
+/*------------ Support page style  ---------------*/
+
+#supportHero a {
+    color: white;
+}
+
+#supportHero input {
+    padding: 10px 10px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#supportWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 150px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #supportWrapper {
+        margin: 0;
+    }
+
+    #supportHero input {
+        width: 100%;
+    }
+}
+
+.investment-section {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+ /* ------------------------------ FAQ  ----------------------------- */
+
+.faq-item {
+    border-top: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.faq-item:last-child {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+@media (max-width: 576px) {
+
+    .faq-item h5 {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .faq-icon {
+        font-size: 17px;
+        margin-left: 15px;
+        flex-shrink: 0;
+    }
+
+    .text-body {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+}
+
+/*----------- Home(Hero section) style  ----------*/
+
+.hero-image {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+}
+
+.hero-title {
+  font-size: 32px;
+}
+
+.hero-text {
+  font-size: 22px;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+}
+
+/*------------ Home(Pricing) style  ----------*/
+
+.pricing-img {
+  width: 120px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .pricing-img {
+    width: 100px;
+  }
+
+}
+
+/*-------------- Home (Education) style -------------*/
+
+.education-img {
+  width: 80%;
+  max-width: 500px;
+}
+
+@media (max-width: 991px) {
+  .education-img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .education-img {
+    width: 100%;
+  }
+}
+
+/*-------------- Open account style  ----------------*/
+
+.signup-btn {
+  width: 220px;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .signup-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/*----------------- Footer style  ----------------------*/
+
+.footer-logo {
+  width: 55%;
+  max-width: 180px;
+}
+
+.links {
+  text-decoration: none;
+  color: #666;
+}
+
+.links:hover,
+.footer-links:hover {
+  color: #387ed1;
+}
+
+.small-para {
+  color: #666;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.links {
+    text-decoration: none;
+    color: #666666;
+    font-size: 14px;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: #387ed1;
+    font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .footer-logo {
+    width: 150px;
+  }
+
+  .small-para {
+    font-size: 11px;
+    line-height: 1.7;
+  }
+}
+
+/*----------------- Products (Universe) style  ------------------*/
+
+.universe-img {
+  height: 55px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.fundhouse-img {
+  width: 180px;
+}
+
+.sensibull-img {
+  width: 190px;
+}
+
+.tijori-img {
+  width: 130px;
+}
+
+.streak-img {
+  width: 170px;
+}
+
+.smallcase-img {
+  width: 200px;
+}
+
+.ditto-img {
+  width: 120px;
+}
+
+.universe-text {
+  color: #9b9b9b;
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.signup-btn {
+  width: 220px;
+}
+
+@media (max-width: 576px) {
+  .universe-img {
+    max-width: 60%;
+    height: 35px;
+    width: auto;
+  }
+
+  .universe-text {
+    font-size: 0.85rem;
+  }
+
+  .signup-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}
