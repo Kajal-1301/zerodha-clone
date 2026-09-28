@@ -1,0 +1,32 @@
+[33mcommit 99f1ad925686a82a5a08e1dacbd4d18eeba79936[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Kajal-1301 <kajalkaushik1301@gmail.com>
+Date:   Sun Sep 27 16:19:47 2026 +0530
+
+    Fix authentication cookie for production
+
+[1mdiff --git a/frontend/src/landing_page/login/login.jsx b/frontend/src/landing_page/login/login.jsx[m
+[1mindex b380afd..bd15fe2 100644[m
+[1m--- a/frontend/src/landing_page/login/login.jsx[m
+[1m+++ b/frontend/src/landing_page/login/login.jsx[m
+[36m@@ -15,7 +15,7 @@[m [mconst Login = () => {[m
+ [m
+     try {[m
+ [m
+[31m-      const response = await axios.post("http://localhost:3000/login", { email, password },[m
+[32m+[m[32m      const response = await axios.post(`${import.meta.env.VITE_API_URL}/login`, { email, password },[m
+         {[m
+           withCredentials: true[m
+         }[m
+[1mdiff --git a/frontend/src/landing_page/signup/Hero.jsx b/frontend/src/landing_page/signup/Hero.jsx[m
+[1mindex 686b7e9..57d91b5 100644[m
+[1m--- a/frontend/src/landing_page/signup/Hero.jsx[m
+[1m+++ b/frontend/src/landing_page/signup/Hero.jsx[m
+[36m@@ -14,7 +14,7 @@[m [mconst Hero = () => {[m
+   const handleSubmit = async (e) => {[m
+     e.preventDefault();[m
+     try {[m
+[31m-      const response = await axios.post("http://localhost:3000/signup", { name, email, password });[m
+[32m+[m[32m      const response = await axios.post(`${import.meta.env.VITE_API_URL}/signup`, { name, email, password });[m
+ [m
+       setName("");[m
+       setEmail("");[m
