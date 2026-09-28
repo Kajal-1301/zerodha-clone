@@ -27,7 +27,7 @@ const Login = () => {
       setPassword("");
 
       setTimeout(() => {
-        window.location.href = "https://zerodha-clone-t3rf.vercel.app/";
+        window.location.href = "https://zerodha-clone-t3rf.vercel.app";
       }, 2000);
 
     } catch (error) {
