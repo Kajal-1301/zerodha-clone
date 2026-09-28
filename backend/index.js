@@ -21,7 +21,7 @@ app.use(
         origin: [
             "http://localhost:5173",                                  // Local frontend
             "http://localhost:5174",                                  // Local dashboard
-            "https://zerodha-clone-le74ly3oz-kajal-dev.vercel.app",     // Deployed frontend
+            "https://zerodha-clone-kajal-dev.vercel.app",              // Deployed frontend
             "https://zerodha-clone-t3rf.vercel.app"                      // Deployed dashboard
         ],
         credentials: true

@@ -35,7 +35,7 @@ const Menu = () => {
 
         console.log("Not logged in");
 
-        window.location.href = "https://zerodha-clone-le74ly3oz-kajal-dev.vercel.app/login";
+        window.location.href = "https://zerodha-clone-kajal-dev.vercel.app/login";
       }
     };
 
@@ -53,7 +53,7 @@ const Menu = () => {
         }
       );
 
-      window.location.href = "https://zerodha-clone-le74ly3oz-kajal-dev.vercel.app/login";
+      window.location.href = "https://zerodha-clone-kajal-dev.vercel.app/login";
 
     } catch (error) {
       console.log("Logout error:", error);
