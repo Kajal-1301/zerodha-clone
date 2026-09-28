@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="row text-center">
 
         <div className="col-12">
-          <img src="media/landing-hero.svg" alt="Hero Image" className="hero-image mb-5"/>
+          <img src="media/landing-hero.svg" alt="Hero Image" className="hero-image mb-5" />
         </div>
 
         <div className="col-12">
@@ -14,7 +14,12 @@ const Hero = () => {
 
           <p className="text-heading hero-text"> Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more. </p>
 
-          <button className="btn btn-primary fs-5 mt-3 px-4 py-1.5"> Sign up for free </button>
+          <Link
+            to="/signup"
+            className="btn btn-primary fs-5 mt-3 px-4 py-1.5"
+          >
+            Sign up for free
+          </Link>
         </div>
 
       </div>

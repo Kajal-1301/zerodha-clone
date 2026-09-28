@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from "react-router-dom";
 
 const OpenAccount = () => {
   return (
@@ -7,9 +7,14 @@ const OpenAccount = () => {
 
         <h1 className='my-3 mt-lg-5 fs-2 text-heading'> Open a Zerodha account </h1>
 
-        <p  className='fs-5 fs-lg-4 text-heading'> Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O trades. </p>
+        <p className='fs-5 fs-lg-4 text-heading'> Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O trades. </p>
 
-        <button className='btn btn-primary fs-5 mt-3 signup-btn'> Sign up for free </button>
+        <Link
+          to="/signup"
+          className="btn btn-primary fs-5 mt-3 px-4 py-1.5"
+        >
+          Sign up for free
+        </Link>
 
       </div>
     </div>
